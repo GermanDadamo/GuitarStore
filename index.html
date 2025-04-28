@@ -1,28 +1,27 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>GuitarStore - Inicio</title>
-    <!-- Bootstrap 5 -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
-    <!-- Animate.css -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
-    <!-- Custom CSS -->
-    <link rel="stylesheet" href="../css/styles.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>GuitarStore - Inicio</title>
+  <!-- Bootstrap 5 -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Animate.css -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="css/styles.css">
 </head>
 <body class="bg-light">
 
-<!-- Navbar -->
 <nav class="navbar navbar-expand-lg navbar-dark bg-dark shadow-sm">
   <div class="container">
-    <a class="navbar-brand" href="#">GuitarStore</a>
+    <a class="navbar-brand" href="index.html">GuitarStore</a>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
       <span class="navbar-toggler-icon"></span>
     </button>
     <div class="collapse navbar-collapse" id="navbarNav">
       <ul class="navbar-nav ms-auto">
-        <li class="nav-item"><a class="nav-link active" href="../index.html">Inicio</a></li>
+        <li class="nav-item"><a class="nav-link active" href="index.html">Inicio</a></li>
         <li class="nav-item"><a class="nav-link" href="pages/catalogo.html">Catálogo</a></li>
         <li class="nav-item"><a class="nav-link" href="pages/servicios.html">Servicios</a></li>
         <li class="nav-item"><a class="nav-link" href="pages/nosotros.html">Nosotros</a></li>
@@ -41,65 +40,35 @@
   </div>
 </section>
 
-<!-- Featured Products -->
+<!-- Imagen principal -->
 <section class="py-5">
   <div class="container">
-    <div class="text-center mb-5">
-      <h2 class="fw-bold">Productos Destacados</h2>
-      <p>Instrumentos de calidad para músicos exigentes</p>
-    </div>
-
-    <div class="row g-4">
-      <div class="col-md-4">
-        <div class="card h-100 shadow-sm">
-          <img src="img/guitarra2.png" class="card-img-top" alt="Guitarra 1">
-          <div class="card-body">
-            <h5 class="card-title">Guitarra Acústica Premium</h5>
-            <p class="card-text">Sonido puro y construcción artesanal para profesionales.</p>
-          </div>
-          <div class="card-footer bg-transparent border-0">
-            <a href="#" class="btn btn-outline-dark w-100">Ver Más</a>
-          </div>
-        </div>
-      </div>
-      <div class="col-md-4">
-        <div class="card h-100 shadow-sm">
-          <img src="img/guitarra2.png" class="card-img-top" alt="Guitarra 2">
-          <div class="card-body">
-            <h5 class="card-title">Guitarra Eléctrica Pro</h5>
-            <p class="card-text">Potencia y estilo para llevar tu música al siguiente nivel.</p>
-          </div>
-          <div class="card-footer bg-transparent border-0">
-            <a href="#" class="btn btn-outline-dark w-100">Ver Más</a>
-          </div>
-        </div>
-      </div>
-      <div class="col-md-4">
-        <div class="card h-100 shadow-sm">
-          <img src="img/guitarra2.png" class="card-img-top" alt="Guitarra 3">
-          <div class="card-body">
-            <h5 class="card-title">Guitarra Clásica Studio</h5>
-            <p class="card-text">Ideal para grabaciones y presentaciones en vivo.</p>
-          </div>
-          <div class="card-footer bg-transparent border-0">
-            <a href="#" class="btn btn-outline-dark w-100">Ver Más</a>
-          </div>
-        </div>
-      </div>
-    </div>
-
+    <img src="img/guitarra2.png" class="img-fluid rounded shadow animate__animated animate__zoomIn" alt="GuitarStore Imagen Principal">
   </div>
 </section>
 
-<!-- Footer -->
+<!-- Sección Sobre Nosotros -->
+<section class="py-5 bg-light">
+  <div class="container">
+    <div class="row align-items-center">
+      <div class="col-md-6">
+        <h2 class="fw-bold">Pasión por la música</h2>
+        <p>Desde 1990, en GuitarStore acompañamos a músicos de todos los niveles, brindando los mejores instrumentos, accesorios y servicios para hacer realidad cada melodía.</p>
+        <a href="pages/nosotros.html" class="btn btn-outline-dark mt-3">Conocé más</a>
+      </div>
+      <div class="col-md-6">
+        <img src="img/guitarra2.png" class="img-fluid rounded" alt="Sobre Nosotros">
+      </div>
+    </div>
+  </div>
+</section>
+
 <footer class="bg-dark text-center text-white py-4 mt-5">
   <div class="container">
     <p class="mb-0">&copy; 2025 GuitarStore - Todos los derechos reservados</p>
   </div>
 </footer>
 
-<!-- Bootstrap JS -->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
-
 </body>
 </html>
