@@ -43,16 +43,8 @@ footer {
     margin-top: auto;
 }
 
-html, body {
-    margin: 0;
-    padding: 0;
-    height: 100%;
-}
-
 .botoncat {
     position: relative;
-    width: 100%;
-    height: 100vh;
     background-image: url('/img/guitarra2.png'); 
     background-size: cover;
     background-position: center;
