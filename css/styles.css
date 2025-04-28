@@ -45,8 +45,7 @@ footer {
 
 .botoncat {
     position: relative;
-    background-image: url('/img/guitarra2.png'); 
-    background-size: cover;
+    background-image: url('../img/guitarra2.png'); 
     background-position: center;
     filter: brightness(0.7);
 }
