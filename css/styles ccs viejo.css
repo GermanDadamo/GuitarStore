@@ -16,10 +16,6 @@ body {
 
 
   /* Todo navbar */
-
-
-
-
 .responsive-navbar {
     background-color: #111;
     color: white;
@@ -104,10 +100,6 @@ body {
     width: 100%;
 }
 }
-
-
-
-
 /* Termina navbar */ 
 
 
@@ -121,10 +113,6 @@ section {
 
 
 /* Empieza contenido index */ 
-
-
-
-
 .hero {
     background-image: url('../img/guitarra2.png');
     background-size: cover;
@@ -168,24 +156,110 @@ section {
     background-color: #5c3a1f;
     transform: scale(1.05); 
 }
-
-
-
-
 /* Termina contenido Index */ 
 
 
 
 
+/* Sección de catálogo */
+.catalogo {
+    background-color: #fff7f0;
+
+}
+.titulo-seccion {
+    color: #8b5e3c;
+    text-align: center;
+    margin-bottom: 2rem;
+  }
+  
+  /* Filtro */
+  .filtro {
+    background-color: #f5eee6;
+    padding: 1rem;
+    border-radius: 8px;
+  }
+  
+  .filtro h5 {
+    color: #8b5e3c;
+    margin-bottom: 1rem;
+  }
+  
+  .filtro label,
+  .filtro select,
+  .filtro input[type=range],
+  .filtro button {
+    width: 100%;
+    margin-bottom: 1rem;
+  }
+  
+  .filtro select,
+  .filtro input[type=range] {
+    background-color: #fff7f0;
+    color: #000000;
+    border: none;
+    padding: 0.5rem;
+    border-radius: 4px;
+  }
+  
+  .filtro button {
+    background-color: #94532d;
+    color: white;
+    border: none;
+    padding: 0.5rem;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .filtro button:hover {
+    background-color: #8b5e3c;
+  }
+  
+  /* Productos */
+  .grid-productos {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 1.5rem;
+  }
+  
+  .producto {
+    background-color: #f5eee6;
+    padding: 1rem;
+    border-radius: 8px;
+    text-align: center;
+    transition: transform 0.2s;
+  }
+  
+  .producto:hover {
+    transform: scale(1.03);
+  }
+  
+  .producto img {
+    max-width: 100%;
+    border-radius: 4px;
+    margin-bottom: 1rem;
+  }
+  
+  .producto h5 {
+    color: #8b5e3c;
+    margin-bottom: 0.5rem;
+  }
+  
+  .producto .precio {
+    display: block;
+    margin-top: 0.5rem;
+    color: #000000;
+    font-weight: bold;
+  }
+  /* Termina Catalogo */
+
+
+
+
 /* Servicios Section */
-
-
-
-
 .servicios-section {
     padding: 60px 20px;
     background-color: #fff7f0;
-    animation: fadeIn 1.5s ease-in;
+
 }
 
 .servicios-header {
@@ -235,16 +309,76 @@ section {
     transform: translateY(-5px);
     box-shadow: 0 6px 14px rgba(139, 94, 60, 0.3);
 }
-
-
-
-
 /* Termina servicios section */ 
 
 
 
 
+/* Nosotros */
+.nosotros {
+  background-color: #fff7f0;
+}
+
+#nosotroscontenido {
+    text-align: center;
+    margin-top: 5rem;
+}
+
+.img-nosotros {
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(255, 102, 0, 0.3);
+}
+
+.texto-nosotros {
+  background-color: #2a2a2a;
+  padding: 2rem;
+  margin-bottom: 2rem;
+  border-radius: 10px;
+  color: #f0f0f0;
+  line-height: 1.6;
+}
+/* Termina nosotros */
+
+
+
+
+/* Contacto */
+.contacto {
+    background-color: #fff7f0;
+}
+
+.texto-contacto {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.btnbtn-contacto {
+    background-color: #94532d;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.btnbtn-contacto:hover {
+    background-color: #e65c00;
+}
+
+
+
+
+/* Termina contacto */
+
+
+
+
 /* Footer */ 
+
+
+
+
 .footer {
     background-color: #111;
     color: #fff;
@@ -255,12 +389,20 @@ section {
     text-align: center;
     margin: 0;
 }
+
+
+
+
 /* Termina footer */ 
 
 
 
 
 /* Animaciones */ 
+
+
+
+
 @keyframes fadeIn {
     0% { opacity: 0; }
     100% { opacity: 1; }
