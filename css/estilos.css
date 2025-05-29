@@ -1,4 +1,3 @@
-@charset "UTF-8";
 /* Imports */
 .responsive-navbar {
   background-color: #111;
@@ -62,22 +61,6 @@
   margin: 0;
 }
 
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-body {
-  font-family: "Arial", sans-serif;
-  background-color: #fff7f0;
-  display: flex;
-  flex-direction: column;
-  min-height: 100vh;
-}
-
-/* Todo navbar ya pasado a scss */
-/* Responsive */
 @media (max-width: 768px) {
   .menu-toggle {
     display: block;
@@ -104,12 +87,38 @@ body {
     width: 100%;
   }
 }
-/* Termina navbar */
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes slideDown {
+  0% {
+    transform: translateY(-50px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+@keyframes slideUp {
+  0% {
+    transform: translateY(50px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
 section {
   flex: 1;
 }
 
-/* Empieza contenido index */
 .hero {
   display: flex;
   flex-direction: column;
@@ -155,9 +164,7 @@ section {
   transform: scale(1.05);
 }
 
-/* Termina contenido Index */
-/* Sección de catálogo */
-.catalogo, .nosotros {
+.catalogo {
   background-color: #fff7f0;
 }
 
@@ -238,8 +245,6 @@ section {
   font-weight: bold;
 }
 
-/* Termina Catalogo */
-/* Servicios Section */
 .servicios-section {
   padding: 60px 20px;
   background-color: #fff7f0;
@@ -293,8 +298,10 @@ section {
   box-shadow: 0 6px 14px rgba(139, 94, 60, 0.3);
 }
 
-/* Termina servicios section */
-/* Nosotros */
+.nosotros {
+  background-color: #fff7f0;
+}
+
 #nosotroscontenido {
   text-align: center;
   margin-top: 5rem;
@@ -314,8 +321,6 @@ section {
   line-height: 1.6;
 }
 
-/* Termina nosotros */
-/* Contacto */
 .contacto {
   background-color: #fff7f0;
 }
@@ -339,37 +344,18 @@ section {
   background-color: #e65c00;
 }
 
-/* Termina contacto */
-/* Footer ya pasado a scss*/
-/* Termina footer */
-/* Animaciones */
-@keyframes fadeIn {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
-@keyframes slideDown {
-  0% {
-    transform: translateY(-50px);
-    opacity: 0;
-  }
-  100% {
-    transform: translateY(0);
-    opacity: 1;
-  }
-}
-@keyframes slideUp {
-  0% {
-    transform: translateY(50px);
-    opacity: 0;
-  }
-  100% {
-    transform: translateY(0);
-    opacity: 1;
-  }
+
+body {
+  font-family: "Arial", sans-serif;
+  background-color: #fff7f0;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
 }
 
 /*# sourceMappingURL=estilos.css.map */

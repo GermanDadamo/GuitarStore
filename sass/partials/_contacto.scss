@@ -1,0 +1,22 @@
+.contacto {
+    background-color: #fff7f0;
+}
+
+.texto-contacto {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.btnbtn-contacto {
+    background-color: #94532d;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.btnbtn-contacto:hover {
+    background-color: #e65c00;
+}
